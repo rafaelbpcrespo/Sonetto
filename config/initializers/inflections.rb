@@ -60,4 +60,5 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
    
   # Irregulares
   inflect.irregular "país", "países"
+  inflect.irregular "user", "users"
 end

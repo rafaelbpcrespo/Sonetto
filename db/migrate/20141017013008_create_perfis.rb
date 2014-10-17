@@ -15,7 +15,7 @@ class CreatePerfis < ActiveRecord::Migration
       t.string :cidade
       t.string :estado
       t.string :complemento
-      t.integer :usuario_id
+      t.integer :user_id
 
       t.timestamps
     end

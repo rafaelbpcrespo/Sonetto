@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141017010658) do
+ActiveRecord::Schema.define(version: 20141017013008) do
+
+  create_table "perfis", force: true do |t|
+    t.string   "nome_da_empresa"
+    t.string   "razao_social"
+    t.string   "cnpj"
+    t.string   "telefone"
+    t.string   "nome_do_responsavel"
+    t.string   "telefone_do_responsavel"
+    t.string   "email_do_responsavel"
+    t.string   "rua"
+    t.integer  "numero"
+    t.string   "cep"
+    t.string   "bairro"
+    t.string   "cidade"
+    t.string   "estado"
+    t.string   "complemento"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
