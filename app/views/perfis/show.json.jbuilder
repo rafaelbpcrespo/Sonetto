@@ -1,0 +1,1 @@
+json.extract! @perfil, :id, :nome_da_empresa, :razao_social, :cnpj, :telefone, :nome_do_responsavel, :telefone_do_responsavel, :email_do_responsavel, :rua, :numero, :cep, :bairro, :cidade, :estado, :complemento, :usuario_id, :created_at, :updated_at

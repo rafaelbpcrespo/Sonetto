@@ -1,0 +1,25 @@
+<%= simple_form_for(@perfil) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :nome_da_empresa %>
+    <%= f.input :razao_social %>
+    <%= f.input :cnpj %>
+    <%= f.input :telefone %>
+    <%= f.input :nome_do_responsavel %>
+    <%= f.input :telefone_do_responsavel %>
+    <%= f.input :email_do_responsavel %>
+    <%= f.input :rua %>
+    <%= f.input :numero %>
+    <%= f.input :cep %>
+    <%= f.input :bairro %>
+    <%= f.input :cidade %>
+    <%= f.input :estado %>
+    <%= f.input :complemento %>
+    <%= f.input :usuario_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

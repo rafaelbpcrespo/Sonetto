@@ -1,0 +1,55 @@
+<h1>Listing perfis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome da empresa</th>
+      <th>Razao social</th>
+      <th>Cnpj</th>
+      <th>Telefone</th>
+      <th>Nome do responsavel</th>
+      <th>Telefone do responsavel</th>
+      <th>Email do responsavel</th>
+      <th>Rua</th>
+      <th>Numero</th>
+      <th>Cep</th>
+      <th>Bairro</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+      <th>Complemento</th>
+      <th>Usuario</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @perfis.each do |perfil| %>
+      <tr>
+        <td><%= perfil.nome_da_empresa %></td>
+        <td><%= perfil.razao_social %></td>
+        <td><%= perfil.cnpj %></td>
+        <td><%= perfil.telefone %></td>
+        <td><%= perfil.nome_do_responsavel %></td>
+        <td><%= perfil.telefone_do_responsavel %></td>
+        <td><%= perfil.email_do_responsavel %></td>
+        <td><%= perfil.rua %></td>
+        <td><%= perfil.numero %></td>
+        <td><%= perfil.cep %></td>
+        <td><%= perfil.bairro %></td>
+        <td><%= perfil.cidade %></td>
+        <td><%= perfil.estado %></td>
+        <td><%= perfil.complemento %></td>
+        <td><%= perfil.usuario_id %></td>
+        <td><%= link_to 'Show', perfil %></td>
+        <td><%= link_to 'Edit', edit_perfil_path(perfil) %></td>
+        <td><%= link_to 'Destroy', perfil, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Perfil', new_perfil_path %>
